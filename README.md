@@ -13,7 +13,7 @@ The program takes as input a graph without loops and multiple edges.
 First you enter the number of vertices. In the k-th string after that you enter the number of adjacent vertices to k-th vertex and then their numbers.
 
 Vertices numbers lie in [0, n-1], where n is the number of vertices.
-If the input is incorrect, the program fails.
+If the input is incorrect, the program returns an error.
 
 ## Output format
 
