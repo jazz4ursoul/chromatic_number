@@ -56,4 +56,4 @@ Graph colors: 0 1 2 0
 
 Chromatic number: 5
 
-Graph colors: 0 1 2 3 4# chromatic_number
+Graph colors: 0 1 2 3 4
