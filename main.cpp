@@ -60,6 +60,29 @@ int main() {
             std::cout << "Wrong input";
             return 0;
         }
+        std::string line;
+        std::getline(std::cin, line);
+        line += ' '; 
+        std::string v = "";
+        for (int j = 0; j < line.size(); ++j) {
+            if (line[j] != ' ' && line[j] != '\n') {
+                v += line[j];    
+            } else if (v != "") {
+                int w = std::stoi(v);
+                if (w < 0 || w >= n) {
+                    std::cout << "Wrong input";
+                    return 0;
+                }
+                gr[i].push_back(w);
+                v = "";
+            }
+        }
+        if (gr[i].size() != m) {
+            std::cout << "Wrong input";
+            std::cout << gr[i].size();
+            return 0;
+        }
+        /* 
         for (int j = 0; j < m; ++j) {
             int v;
             std::cin >> v;
@@ -69,6 +92,7 @@ int main() {
             }
             gr[i].push_back(v);
         }
+        */
     }
     
     std::vector<int> order(n);
