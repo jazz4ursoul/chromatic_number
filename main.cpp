@@ -44,16 +44,29 @@ int main() {
     int n;
     std::cout << "Enter vertexes count: \n";
     std::cin >> n;
-    
+   
+    if (n < 0) {
+        std::cout << "Wrong input";
+        return 0;
+    }
+
     std::vector<std::vector<int> > gr(n, std::vector<int>(0));
     
     std::cout << "Enter graph:\n";
     for (int i = 0; i < n; ++i) {
         int m;
         std::cin >> m;
+        if (m >= n) {
+            std::cout << "Wrong input";
+            return 0;
+        }
         for (int j = 0; j < m; ++j) {
             int v;
             std::cin >> v;
+            if (v < 0 || v >= n) {
+                std::cout << "Wrong input";
+                return 0;
+            }
             gr[i].push_back(v);
         }
     }
