@@ -1,7 +1,7 @@
 # Chromatic_number
 
 The program calculates the chromatic number of given graph (https://en.wikipedia.org/wiki/Graph_coloring), using greedy coloring algorithm. 
-The program builds a sequence for this algorithm, that gives an optimal graph coloring (https://en.wikipedia.org/wiki/Greedy_coloring).
+The program builds a sequence for this algorithm, that gives a graph coloring (https://en.wikipedia.org/wiki/Greedy_coloring).
 
 The program is created as part of the "Discrete analysis" course by A.M. Raigorodskiy at Moscow Institute of Physics and Technology.
 
